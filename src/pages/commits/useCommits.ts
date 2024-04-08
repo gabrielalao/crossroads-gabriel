@@ -9,7 +9,7 @@ import React from "react";
 
 export const useCommits = (owner: string, repo: string, per_page: number) => {
   const queryClient = useQueryClient();
-  const [page, setPage] = React.useState(0);
+  const [page, setPage] = React.useState(1);
   const fetchCommits = (_page: number): Promise<GithubCommit[]> =>
     axios
       .get(
