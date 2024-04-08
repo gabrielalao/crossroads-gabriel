@@ -1,3 +1,4 @@
+import moment from "moment";
 import { DEFAULT_AVATAR } from "../constants/strings";
 import { GithubCommit } from "../types/commit.type";
 
@@ -33,7 +34,7 @@ const CommitListElement: React.FC<Props> = ({ commit, owner, repo }) => {
         </div>
         <div className="text-xs text-gray-500">
           <span>{commit.commit.author.name}</span>
-          <span>{commit.commit.author.date}</span>
+          <span className="ml-2">{moment(commit.commit.author.date).fromNow()}</span>
         </div>
       </div>
     </div>
