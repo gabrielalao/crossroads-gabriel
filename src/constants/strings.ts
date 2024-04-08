@@ -1,0 +1,1 @@
+export const DEFAULT_AVATAR = "https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32";
